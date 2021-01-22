@@ -1,0 +1,21 @@
+definitions:
+  beer.BeerResponse:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /beer/:
+    get:
+      description: Get ALL Beers
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/beer.BeerResponse'
+      summary: Retrieves users from mongodb
+swagger: "2.0"

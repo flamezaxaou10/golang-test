@@ -1,0 +1,35 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/beer/": {
+            "get": {
+                "description": "Get ALL Beers",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Retrieves users from mongodb",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/beer.BeerResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "beer.BeerResponse": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
