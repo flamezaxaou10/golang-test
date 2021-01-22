@@ -2,6 +2,6 @@ version: "3.9"
 services:
   gingo:
     build: ./
-    image: gingo:0.0.2
+    image: flamezaxaou10/gingo:0.0.2
     ports:
       - 8888:1234
